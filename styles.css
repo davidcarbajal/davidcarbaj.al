@@ -1,0 +1,93 @@
+:root {
+  --light-orange: #FBD0A6;
+  --pumpkin: #F37022;
+  --cornell-red: #B11016;
+  --keppel: #2ABA9E;
+  --cerulean: #007096;
+}
+
+body{
+  background-color:var(--light-orange);
+}
+
+.box {
+  max-width: 70%;
+  margin:28vh auto;
+  background-color:var(--cornell-red);
+  box-shadow: 7px 10px black;
+
+}
+
+.panes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left {
+  border-right: .5mm solid;
+}
+
+.right {
+
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+img {
+  display: block;
+  border-radius:10px;
+  width: 50%;
+  height: auto;
+}
+
+figure {
+  margin: 3em;
+}
+
+.above * {
+  display: inline;
+}
+.above {
+  border-bottom: 0.5mm solid;
+}
+
+.tiles {
+  flex: 1;
+  background-color:var(--pumpkin);
+  color:white;
+  height:3em;
+  display:block;
+  max-width: 20%;
+  text-align: center;
+  font-size: 2em;
+}
+.about-contact {
+  text-align: right;
+  float: right;
+}
+
+
+a:link, a:visited  {
+  text-decoration: none;
+  color: black;
+}
+  
+a:active, a:hover  {
+  text-decoration: underline;
+  background-color: babyblue;
+  color: white;
+}
+
+.bluebox {
+  background-color: var(--keppel);
+  color: white;
+  box-shadow: 5px 5px black;
+}
